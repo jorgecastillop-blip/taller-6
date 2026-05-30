@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Rajdhani:wght@400;600&display=swap');
+   /* profe esto importa fuentes externas desde Google Fonts para que se vea mas atractiva la pagina */
+
+*{   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+/* y aplica a toda la pagina */
+
+
+body {
+    background-color: #0a0a0f;
+    color: #f0e6c8;
+    font-family: 'Rajdhani', sans-serif;
+    padding: 0 40px;
+}
+
+header {
+    background: linear-gradient(135deg, #1a0a00, #3d1a00);
+    border-bottom: 3px solid #f4a200;
+    padding: 18px 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 2.8rem;
+    color: #f4a200;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 8px #000, 0 0 20px #f4a20066;
+}
+
+nav {
+    margin-top: 8px;
+}
+
+nav a {
+    color: #f0e6c8;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #f4a200;
+}
+
+
+
+h2 {
+    font-family: 'Bangers', cursive;
+    color: #f4a200;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+
+.filtros-container {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.input-buscador {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px 16px;
+    background: #16161f;
+    border: 1px solid #f4a20055;
+    border-radius: 6px;
+    color: #f0e6c8;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-buscador::placeholder {
+    color: #666;
+}
+
+.input-buscador:focus {
+    border-color: #f4a200;
+}
+
+.combo-raza {
+    padding: 10px 16px;
+    background: #16161f;
+    border: 1px solid #f4a20055;
+    border-radius: 6px;
+    color: #f0e6c8;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.combo-raza:focus {
+    border-color: #f4a200;
+}
+
+
+#seccionTransformaciones {
+    margin-top: 40px;
+}
+
+.contenedor{
+    padding: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 18px;
+    justify-items: center;
+    
+}
+
+.personaje {
+    background: #16161f;
+    border: 1px solid #f4a20055;
+    border-radius: 10px;
+    padding: 14px;
+    text-align: center;
+    width: 100%;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.personaje:hover {
+    transform: translateY(-4px);
+    border-color: #f4a200;
+}
+
+.personaje-img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 6px;
+    background: #0d0d14;
+}
+
+.personaje-nombre {
+    font-family: 'Bangers', cursive;
+    font-size: 1.1rem;
+    color: #f4a200;
+    margin-top: 8px;
+    letter-spacing: 1px;
+}
+
+.personaje-raza {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-top: 4px;
+}
+
+.btn-detalles {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 14px;
+    background: #f4a200;
+    color: #0a0a0f;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    transition: background 0.2s;
+}
+
+.btn-detalles:hover {
+    background: #ffbe3d;
+}
+
+
+.detalle-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.detalle-img {
+    width: 280px;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #f4a20055;
+    background: #16161f;
+    object-fit: contain;
+}
+
+.detalle-info {
+    flex: 1;
+    min-width: 260px;
+}
+
+.detalle-info h2 {
+    font-size: 2.2rem;
+    margin-bottom: 14px;
+}
+
+
+table {
+    font-family: 'Rajdhani', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+td, th {
+    border: 1px solid #f4a20033;
+    padding: 10px 14px;
+}
+
+
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #3d1a00;
+    color: #f4a200;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+
+.descripcion-box {
+    background: #16161f;
+    border-left: 4px solid #f4a200;
+    padding: 14px 18px;
+    border-radius: 0 8px 8px 0;
+    margin-top: 14px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+
+.btn-planeta {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 10px 22px;
+    background: transparent;
+    border: 2px solid #f4a200;
+    color: #f4a200;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-planeta:hover {
+    background: #f4a200;
+    color: #0a0a0f;
+}
+
+.btn-volver {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 18px;
+    background: #1a0a00;
+    border: 1px solid #f4a20077;
+    color: #f4a200;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.btn-volver:hover {
+    background: #3d1a00;
+}
+
+
+.planeta-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.planeta-img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 50%;
+    border: 3px solid #f4a200;
+    object-fit: cover;
+}
+
+.planeta-info {
+    flex: 1;
+    min-width: 260px;
+}
+
+footer {
+    text-align: center;
+    padding: 16px;
+    color: #555;
+    font-size: 0.85rem;
+    border-top: 1px solid #1e1e2a;
+    margin-top: 40px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball Z - Personaje</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="../js/utilidades.js"></script>
+    <script src="../js/personaje.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Dragon Ball Z</h1>
+        <nav>
+            <a href="../index.html">Inicio</a>
+        </nav>
+    </header>
+
+    <div>
+        <a href="../index.html" class="btn-volver">← Volver</a>
+
+        <div class="detalle-container">
+
+            <img id="personajeImg" src="" alt="Personaje" class="detalle-img">
+
+            <div class="detalle-info">
+                <h2 id="nombre"></h2>
+
+                <table>
+                    <tr>
+                        <th>Campo</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr>
+                        <td>Raza</td>
+                        <td id="raza"></td>
+                    </tr>
+                    <tr>
+                        <td>Genero</td>
+                        <td id="genero"></td>
+                    </tr>
+                    <tr>
+                        <td>Ki</td>
+                        <td id="ki"></td>
+                    </tr>
+                    <tr>
+                        <td>Ki Maximo</td>
+                        <td id="maxKi"></td>
+                    </tr>
+                    <tr>
+                        <td>Afiliacion</td>
+                        <td id="afiliacion"></td>
+                    </tr>
+                </table>
+
+                <div class="descripcion-box">
+                    <p id="descripcion"></p>
+                </div>
+
+                <a id="btnPlaneta" href="#" class="btn-planeta">Ver Planeta</a>
+
+            </div>
+        </div>
+
+        <div id="seccionTransformaciones">
+            <h2>Transformaciones</h2>
+            <div id="divTransformaciones" class="gridContainer"></div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Dragon Ball Z &copy; 2025 - Programacion Web I</p>
+    </footer>
+
+    <script>
+        consumirAPIPersonaje()
+    </script>
+
+</body>
+</html>

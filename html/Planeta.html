@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball Z - Planeta</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="../js/utilidades.js"></script>
+    <script src="../js/planeta.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Dragon Ball Z</h1>
+        <nav>
+            <a href="../index.html">Inicio</a>
+        </nav>
+    </header>
+
+    <div>
+        <a href="javascript:history.back()" class="btn-volver">← Volver</a>
+
+        <div class="planeta-container">
+
+            <img id="planetaImg" src="" alt="Planeta" class="planeta-img">
+
+            <div class="planeta-info">
+                <h2 id="nombrePlaneta"></h2>
+
+                <table>
+                    <tr>
+                        <th>Campo</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr>
+                        <td>Destruido</td>
+                        <td id="destruido"></td>
+                    </tr>
+                </table>
+
+                <div class="descripcion-box">
+                    <p id="descripcionPlaneta"></p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Dragon Ball Z &copy; 2025 - Programacion Web I</p>
+    </footer>
+
+    <script>
+        consumirAPIPlaneta()
+    </script>
+
+</body>
+</html>

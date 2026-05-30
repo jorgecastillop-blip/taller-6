@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball Z</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/utilidades.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Dragon Ball Z</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+        </nav>
+    </header>
+
+    <div class="contenedor">
+        <div class="filtros-container">
+            <input type="text" id="buscador" placeholder="Buscar personaje..." oninput="filtrarPersonajes()" class="input-buscador">
+            <select id="comboRaza" onchange="filtrarPersonajes()" class="combo-raza">
+                <option value="">Todas las razas</option>
+            </select>
+        </div>
+
+        <div id="divPadre" class="gridContainer">
+        </div>
+    </div>
+
+    
+
+    <script>
+        consumirAPI()
+    </script>
+
+</body>
+</html>
