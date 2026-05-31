@@ -25,7 +25,7 @@ function mostrarDatosPersonaje(personaje){
     document.getElementById('descripcion').innerHTML = personaje.description
 
     var btnPlaneta = document.getElementById('btnPlaneta')
-    btnPlaneta.href = 'planeta.html?id=' + personaje.originPlanet.id
+    btnPlaneta.href = 'Planeta.html?id=' + personaje.originPlanet.id
 
     mostrarTransformaciones(personaje.transformations)
 }
