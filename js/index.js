@@ -29,7 +29,7 @@ function poblarPersonajes(personajes){
         var raza = crearElementoTexto('p', 'Raza: ' + personaje.race)
         raza.classList.add('personaje-raza')
 
-        var linkDetalles = crearElementoLink('html/personaje.html?id=' + personaje.id, 'Ver Detalles')
+        var linkDetalles = crearElementoLink('html/Personaje.html?id=' + personaje.id, 'Ver Detalles')
         linkDetalles.classList.add('btn-detalles')
 
         adicionarElementoAContenedor(img, divHijo)
